@@ -1,0 +1,99 @@
+// Layout
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-lg {
+  max-width: 1200px;
+}
+
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.flex         { display: flex; }
+
+// Spacing
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3em; }
+.mb-4 { margin-bottom: 4rem; }
+.mb-5 { margin-bottom: 6rem; }
+.mb-6 { margin-bottom: 8rem; }
+.mb-7 { margin-bottom: 16rem; }
+.mb-8 { margin-bottom: 32rem; }
+
+// Typography
+
+.font-primary   { font-family: $font-family-primary; }
+.font-secondary { font-family: $font-family-secondary; }
+.font-monospace { font-family: $font-family-monospace; }
+
+.fs-1 { font-size: $font-size-1; }
+.fs-2 { font-size: $font-size-2; }
+.fs-3 { font-size: $font-size-3; }
+.fs-4 { font-size: $font-size-4; }
+.fs-5 { font-size: $font-size-5; }
+.fs-6 { font-size: $font-size-6; }
+.fs-7 { font-size: $font-size-7; }
+.fs-8 { font-size: $font-size-8; }
+
+.text-bold   { font-weight: 800; }
+.text-normal { font-weight: 400; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
+
+.text-tracked {
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.measure { max-width: 32em; }
+
+// Color
+
+.light-gold          { color: $light-gold; }
+.gold                { color: $gold; }
+.dark-gold           { color: $dark-gold; }
+.light-vermillion    { color: $light-vermillion; }
+.vermillion          { color: $vermillion; }
+.dark-vermillion     { color: $dark-vermillion; }
+.light-blue          { color: $light-blue; }
+.blue                { color: $blue; }
+.dark-blue           { color: $dark-blue; }
+.black               { color: $black; }
+.slate               { color: $slate; }
+.snow                { color: $snow; }
+.white               { color: $white; }
+
+.bg-light-gold       { background-color: $light-gold; }
+.bg-gold             { background-color: $gold; }
+.bg-dark-gold        { background-color: $dark-gold; }
+.bg-light-vermillion { background-color: $light-vermillion; }
+.bg-vermillion       { background-color: $vermillion; }
+.bg-dark-vermillion  { background-color: $dark-vermillion; }
+.bg-light-blue       { background-color: $light-blue; }
+.bg-blue             { background-color: $blue; }
+.bg-dark-blue        { background-color: $dark-blue; }
+.bg-black            { background-color: $black; }
+.bg-slate            { background-color: $slate; }
+.bg-snow             { background-color: $snow; }
+.bg-white            { background-color: $white; }
+
+.bg-gradient-vermillion {
+  background-color: $vermillion;
+  background-image: linear-gradient(45deg, $vermillion, $dark-vermillion);
+}
+
+// https://webaim.org/techniques/css/invisiblecontent/
+
+.screen-reader-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
