@@ -156,6 +156,7 @@ a {
   margin-bottom: 1rem;
 }
 
+
 @media (min-width: $breakpoint-lg) {
   .grid {
     display: flex;
@@ -191,7 +192,23 @@ a {
 }
 
 .footer-content {
-  padding: 12rem 1rem 4rem;
+  padding: 4rem 1rem;
+}
+
+.footer-content-col {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: $breakpoint-lg) {
+  .footer-content {
+    align-items: flex-start;
+    display: flex;
+    padding-top: 8rem;
+  }
+  
+  .footer-content-col {
+    margin-bottom: 0;
+  }
 }
 
 .rasa-form-input {
@@ -226,5 +243,23 @@ a {
 
   .rasa-form-group {
     display: flex;
+  }
+}
+
+.footer-menu-heading {
+  font-size: .75rem;
+}
+
+.footer-menu-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    line-height: 2;
+  }
+
+  a {
+    border-bottom: 2px solid $slate;
+    color: $white;
   }
 }
