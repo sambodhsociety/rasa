@@ -3,13 +3,16 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: $black;
   font-family: $font-family-primary;
   line-height: 1.25;
-
 }
 
 img {
@@ -261,5 +264,24 @@ a {
   a {
     border-bottom: 2px solid $slate;
     color: $white;
+  }
+}
+
+.top-arrow {
+  bottom: 1rem;
+  position: fixed;
+  right: 1rem;
+  
+  svg {
+    fill: $slate;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .top-arrow {
+    bottom: 2rem;
+    right: 2rem;
   }
 }
