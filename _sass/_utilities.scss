@@ -88,6 +88,12 @@
   background-image: linear-gradient(45deg, $vermillion, $dark-vermillion);
 }
 
+// Border
+
+.b-solid-snow {
+  border: 1px solid $snow;
+}
+
 // https://webaim.org/techniques/css/invisiblecontent/
 
 .screen-reader-only {
